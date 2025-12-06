@@ -15,4 +15,8 @@ package AdventOfSysMLv2_Lesson06 {
             /* Naughty-Nice dashboard. */
         }
     }
+
+    abstract ref part reindeer [10];
+
+
 }
