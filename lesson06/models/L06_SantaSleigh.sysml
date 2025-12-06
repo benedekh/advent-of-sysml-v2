@@ -19,7 +19,7 @@ package AdventOfSysMLv2_Lesson06 {
 
         // Entities related to the sleigh
         ref item santa;
-        abstract ref part reindeer : Reindeer [10];
+        abstract ref part reindeer : Reindeer [9];
 
         ref part dasher subsets reindeer { constant attribute redefines noseColor = Color::orange; }
         ref part dancer subsets reindeer { constant attribute redefines noseColor = Color::yellow; }
@@ -32,10 +32,6 @@ package AdventOfSysMLv2_Lesson06 {
         ref part rudolph subsets reindeer {
             constant attribute redefines noseColor = Color::red;
             attribute redefines energyLevel := 200.0;
-        }
-        ref part josh subsets reindeer {
-            constant attribute redefines noseColor = Color::blue;
-            attribute redefines energyLevel := 9000.1;
         }
     }
 
